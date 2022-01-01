@@ -167,7 +167,7 @@ const App = () => {
   },[]);
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const timers = setInterval(() => {
       checkForRowOfFour();
       checkForRowOfThree();
       checkForColoumOfFour();
@@ -176,7 +176,7 @@ const App = () => {
       setCurrentColorArrangement([...currentColorArrangement]);
     },100)
 
-    return( () => clearInterval(timer));
+    return( () => clearInterval(timers));
 
     }, [checkForColoumOfThree, checkForColoumOfFour, checkForRowOfThree, checkForRowOfFour, moveBoard, currentColorArrangement]);
   
