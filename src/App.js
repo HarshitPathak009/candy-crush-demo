@@ -178,6 +178,7 @@ const App = () => {
 
     return( () => clearInterval(timers));
 
+
     }, [checkForColoumOfThree, checkForColoumOfFour, checkForRowOfThree, checkForRowOfFour, moveBoard, currentColorArrangement]);
   
   // console.log(currentColorArrangement);
